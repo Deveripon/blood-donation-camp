@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Donate Blood | Save Life</title>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <!-- ========== Login and Registration section Start From Here ========== -->
+        <div
+            id="main-section"
+            class="h-screen overflow-hidden bg-slate-400 w-full flex justify-center items-center">
+            <div class="registration-login-area flex w-9/12 lg:w-8/12 h-4/6">
+                <div
+                    class="left-area w-1/2 h-full flex justify-center items-center bg-white rounded-l-2xl">
+                    <img
+                        class="rounded-l-2xl"
+                        src="../assets/img/28463049_xco2_8jtl_220606.jpg"
+                        alt="" />
+                </div>
+                <div class="right-area w-1/2 p-6 bg-gray-200 rounded-r-2xl">
+                    <div class="right-top flex gap-12">
+                        <button
+                            onclick="showLoginInArea()"
+                            ;
+                            id="signinButton"
+                            class="text-purple-900 active active:text-red-600 text-2xl hover:text-purple-400 transform duration-300">
+                            Sign In
+                        </button>
+                        <button
+                            onclick="showRegistrationArea()"
+                            ;
+                            id="signupButton"
+                            class="text-purple-900 text-2xl active:text-red-600 hover:text-purple-400 transform duration-300">
+                            Sign Up
+                        </button>
+                    </div>
+                    <!-- registration area -->
+                    <div class="registration-section">
+                        <form action="" id="registration-form" class="mt-4 mb-3 pr-4 xl:pr-20">
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="name">Name</label>
+                                <input
+                                    class="p-2 rounded-md outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="text"
+                                    name="name"
+                                    id="name" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="regemail">Email</label>
+                                <input
+                                    class="p-2 rounded-md outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="text"
+                                    name="email"
+                                    id="regemail" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="regpassword"
+                                    >Password</label
+                                >
+                                <input
+                                    class="p-2 rounded-md password outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="password"
+                                    name="password"
+                                    id="regpassword" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="conf-password"
+                                    >Confirm Password</label
+                                >
+                                <input
+                                    class="p-2 conf-password rounded-md outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="password"
+                                    name="conf-password"
+                                    id="conf-password" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="regpassShow">
+                                    <input
+                                        type="checkbox"
+                                        id="regpassShow"
+                                        onclick="passShowFunction()"
+                                        name="passShow" />
+                                    Show Password</label
+                                >
+                            </div>
+
+                            <input
+                                class="bg-red-600 text-white font-medium py-3 px-8 rounded-md cursor-pointer hover:bg-red-800 transform duration-300"
+                                type="submit"
+                                value="Register Now" />
+                        </form>
+                        <a class="text-gray-800" href="#"
+                            >Already have an account ?
+                            <span
+                                onclick="showLoginInArea()"
+                                ;
+                                class="text-purple-800 hover:text-red-600 transform duration-300"
+                                >Sign in
+                            </span>
+                        </a>
+                        <!-- <br>
+          <p class="text-center text-gray-800">or</p>
+          <p class="text-gray-800">sign up with</p> -->
+                        <!-- 
+          <div class="social-icon mt-2">
+            <ul class="flex justify-evenly items-center">
+              <li class="border border-purple-600 hover:border-red-700 rounded-full py-2 px-5"><a href="#"><i
+                    class="ri-facebook-circle-fill text-blue-800 text-xl"></i></a></li>
+              <li class="border border-purple-600 hover:border-red-700 rounded-full py-2 px-5"><a href="#"><i
+                    class="ri-google-fill text-gray-900 text-xl"></i></a>
+              </li>
+              <li class="border border-purple-600 hover:border-red-700 rounded-full py-2 px-5"><a href="#"><i
+                    class="ri-github-fill text-gray-700 text-xl"></i></a>
+              </li>
+            </ul>
+          </div> -->
+                    </div>
+                    <!-- registration area -->
+                    <!-- login area -->
+                    <div class="login-section">
+                        <form action="" id="login-form" class="mt-12 mb-3 pr-4 xl:pr-20">
+                            <div class="form-group flex flex-col mb-4 mt-20">
+                                <label class="text-gray-700 text-md" for="email">Email</label>
+                                <input
+                                    class="p-2 rounded-md outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="text"
+                                    name="email"
+                                    id="email" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="password">Password</label>
+                                <input
+                                    class="p-2 password rounded-md outline-none border border-gray-500 dark:bg-transparent bg-gray-200 focus:border-purple-700"
+                                    type="password"
+                                    id="password"
+                                    name="password" />
+                            </div>
+                            <div class="form-group flex flex-col mb-2">
+                                <label class="text-gray-700 text-md" for="passShow">
+                                    <input
+                                        type="checkbox"
+                                        onclick="passShowFunction()"
+                                        id="passShow"
+                                        name="passShow" />
+                                    Show Password</label
+                                >
+                            </div>
+                            <input
+                                class="bg-red-600 text-white font-medium mt-20 py-3 px-8 rounded-md cursor-pointer hover:bg-red-800 transform duration-300"
+                                type="submit"
+                                value="Sign In" />
+                        </form>
+                        <a class="text-gray-800" href="#"
+                            >You don't have an account ?
+                            <span
+                                onclick="showRegistrationArea()"
+                                ;
+                                class="text-purple-800 hover:text-red-600 transform duration-300"
+                                >Sign up
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./scripts/index.js"></script>
+        <script src="../../script.js"></script>
+    </body>
+</html>

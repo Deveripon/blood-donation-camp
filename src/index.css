@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .card {
+        @apply text-3xl  h-48 w-80 rounded-lg shadow-sm flex justify-center items-center flex-col;
+    }
+    .green-button {
+        @apply text-[18px] my-0 py-0 px-4 text-white rounded-lg hover:bg-green-500 transform duration-300 bg-green-800;
+    }
+    .btn-green {
+        @apply bg-green-500 border transform duration-100 border-green-500 rounded-sm hover:bg-green-700 hover:border-green-700 text-white px-3 m-auto text-center py-1;
+    }
+    .btn-pink {
+        @apply bg-pink-500 border transform duration-100 border-pink-500 rounded-sm hover:bg-pink-700 hover:border-pink-700 text-white px-3 m-auto text-center py-1;
+    }
+    .btn-orange {
+        @apply bg-orange-500 border transform duration-100 border-orange-500 rounded-sm hover:bg-orange-700 hover:border-orange-700 text-white px-3 m-auto text-center py-1;
+    }
+    .btn-teal {
+        @apply bg-teal-500 border transform duration-100 border-teal-500 rounded-sm hover:bg-teal-700 hover:border-teal-700 text-white px-3 m-auto text-center py-1;
+    }
+    .input {
+        @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    }
+}
+
+@layer utilities {
+    .padding {
+        @apply sm:px-16 px-8 sm:py-24 py-12;
+    }
+
+    .padding-x {
+        @apply sm:px-16 px-8;
+    }
+
+    .padding-y {
+        @apply sm:py-24 py-12;
+    }
+
+    .padding-l {
+        @apply sm:pl-16 pl-8;
+    }
+
+    .padding-r {
+        @apply sm:pr-16 pr-8;
+    }
+
+    .padding-t {
+        @apply sm:pt-24 pt-12;
+    }
+
+    .padding-b {
+        @apply sm:pb-24 pb-12;
+    }
+
+    .info-text {
+        @apply font-montserrat text-slate-gray text-lg leading-7;
+    }
+}

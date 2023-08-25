@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-sarter-kit",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "post-css": "npx tailwindcss -i ./src/index.css -o ./public/assets/css/style.css --watch",
+    "sass": "node-sass --watch ./public/assets/scss/main.scss ./public/assets/css/main.css --output-style compressed"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
